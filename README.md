@@ -1,6 +1,6 @@
 # Agent board animated
 
-A small animated office for Claude Code. It shows the jobs Claude hands to other agents, so you can see who is working at a glance. As seen on @pluggedwith.ai.
+A small animated office for Claude Code. It shows the jobs Claude hands to other agents, so you can see who is working at a glance. As seen on [@pluggedwith.ai](https://www.instagram.com/pluggedwith.ai/) on Instagram.
 
 ![The last job finishes, the office gets a pizza break, and the countdown resets](media/pizza-break.gif)
 
