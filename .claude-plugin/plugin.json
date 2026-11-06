@@ -1,0 +1,7 @@
+{
+  "name": "agent-board-animated",
+  "version": "0.1.0",
+  "description": "An animated office view of the Codex and Gemini runs Claude delegates in this project",
+  "author": { "name": "Canyouwritecode" },
+  "types": "./types/index.d.ts"
+}

@@ -1,0 +1,6 @@
+{
+  "name": "agent-board-animated",
+  "description": "An animated office view of the jobs Claude delegates to other agents",
+  "owner": { "name": "Canyouwritecode" },
+  "plugins": [{ "name": "agent-board-animated", "source": "./" }]
+}
