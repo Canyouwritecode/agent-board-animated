@@ -14,13 +14,14 @@ Below the office, the panel lists running jobs and recent results as text.
 
 ## Install
 
-Type this at the prompt of a Claude Code terminal session:
+Run these two commands in a terminal:
 
 ```
-/plugin install agent-board-animated --marketplace Canyouwritecode/agent-board-animated
+claude plugin marketplace add https://github.com/Canyouwritecode/agent-board-animated.git
+claude plugin install agent-board-animated@agent-board-animated
 ```
 
-Answer `y` to add the marketplace, then choose a scope. Restart any chats that are already open.
+Restart any chats that are already open.
 
 ## Use
 
