@@ -1,6 +1,6 @@
 # Agent board animated
 
-A small animated office for Claude Code. It shows the jobs Claude hands to other agents, so you can see who is working at a glance.
+A small animated office for Claude Code. It shows the jobs Claude hands to other agents, so you can see who is working at a glance. As seen on @pluggedwith.ai.
 
 ![The last job finishes, the office gets a pizza break, and the countdown resets](media/pizza-break.gif)
 
@@ -12,16 +12,30 @@ A small animated office for Claude Code. It shows the jobs Claude hands to other
 
 Below the office, the panel lists running jobs and recent results as text.
 
-## Install
+## Start here
 
-Run these two commands in a terminal:
+This repo is only the board. Claude managing Codex and Gemini comes from a second repo, [delegate-to-codex-gemini](https://github.com/Canyouwritecode/delegate-to-codex-gemini). For the whole setup, you need both.
 
-```
-claude plugin marketplace add https://github.com/Canyouwritecode/agent-board-animated.git
-claude plugin install agent-board-animated@agent-board-animated
-```
+### What you need
 
-Restart any chats that are already open.
+- **Claude Code with the VS Code extension.** The office only draws in VS Code. In a terminal you get the text list, not the animation.
+- **For real jobs:** the Codex CLI and the Antigravity CLI (`agy`), both signed in, and a git repository with at least one commit. The demo needs none of these.
+
+### Install
+
+1. Install the skills by following the [delegate-to-codex-gemini install steps](https://github.com/Canyouwritecode/delegate-to-codex-gemini#install).
+2. Install the board by running these two commands in a terminal:
+
+   ```
+   claude plugin marketplace add https://github.com/Canyouwritecode/agent-board-animated.git
+   claude plugin install agent-board-animated@agent-board-animated
+   ```
+
+3. Restart any open chats, then run the demo in Claude Code in VS Code:
+
+   ```
+   /agent-board-animated demo
+   ```
 
 ## Use
 
@@ -31,11 +45,7 @@ The board opens by itself in a project that has a `.codex-tasks` or `.agent-task
 /agent-board-animated
 ```
 
-To watch a short demo with made-up jobs:
-
-```
-/agent-board-animated demo
-```
+The demo plays made-up jobs, so it works before you have run anything real.
 
 ## What it shows
 
@@ -49,7 +59,6 @@ The [delegate-to-codex-gemini](https://github.com/Canyouwritecode/delegate-to-co
 
 ## Good to know
 
-- The animation needs the VS Code extension. The terminal has no drawing support, so it shows the text list only.
 - The board needs a Claude Code version that supports mods. If it doesn't load, set `CLAUDE_CODE_ENABLE_FUNCTION_HOOKS=1` and restart.
 - The text list shows job titles and the first line of each result. Keep that in mind when you share your screen or record it.
 - The pizza countdown is kept per project.
